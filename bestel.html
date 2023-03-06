@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="bestel.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,500;0,600;0,800;1,500&display=swap"
+        rel="stylesheet">
+    <title>Webshop</title>
+</head>
+
+<body>
+    <div class="alles">
+        <header>
+            <a href="index.html"><img class="logo" src="media/logo.png" alt="logo"></a>
+            <ul class="navbar">
+                <li><a href="index.html" class="navtekst" id="home">Home</a></li>
+                <li><a href="menu.html" class="navtekst">Menu</a></li>
+                <li><a href="bestel.html" class="navtekst">Bestelen</a></li>
+                <li><a href="info.html" class="navtekst">Info</a></li>
+            </ul>
+
+        </header>
+
+
+        <div class="begintekst">
+            <h1 class="begintekstgroot">Bekijk onze producten</h1>
+            <p>Bestel hier onze heerlijke producten! Heeft u vragen? Neem contact met ons op!</p>
+        </div>
+
+        <div class="main">
+
+            <div class="besteld">
+                <table class="tablemand">
+                    <tr>
+                        <td class="tdmand"> </td>
+                        <td class="tdmand">Product</td>
+                        <td class="tdmand">Aantal stuks</td>
+                        <td class="tdmand">Aantal personen</td>
+                        <td class="tdmand">Prijs per persoon</td>
+                    </tr>
+                    <tr>
+                        <td class="tdmand" id="foto"></td>
+                        <td class="tdmand" id="naam"></td>
+                        <td class="tdmand" id="stuks"></td>
+                        <td class="tdmand" id="personen"></td>
+                        <td class="tdmand" id="prijsstuks"></td>
+                    </tr>
+                    <tr>
+                        <td class="tdmand" id="foto1"></td>
+                        <td class="tdmand" id="naam1"></td>
+                        <td class="tdmand" id="stuks1"></td>
+                        <td class="tdmand" id="personen1"></td>
+                        <td class="tdmand" id="prijsstuks1"></td>
+                    </tr>
+                    <tr>
+                        <td class="tdmand" id="foto2"></td>
+                        <td class="tdmand" id="naam2"></td>
+                        <td class="tdmand" id="stuks2"></td>
+                        <td class="tdmand" id="personen2"></td>
+                        <td class="tdmand" id="prijsstuks2"></td>
+                    </tr>
+                    <tr>
+                        <td class="tdmand" id="foto3"></td>
+                        <td class="tdmand" id="naam3"></td>
+                        <td class="tdmand" id="stuks3"></td>
+                        <td class="tdmand" id="personen3"></td>
+                        <td class="tdmand" id="prijsstuks3"></td>
+                    </tr>
+                    <tr>
+                        <td class="tdmand" id="foto4"></td>
+                        <td class="tdmand" id="naam4"></td>
+                        <td class="tdmand" id="stuks4"></td>
+                        <td class="tdmand" id="personen4"></td>
+                        <td class="tdmand" id="prijsstuks4"></td>
+                    </tr>
+                    <tr>
+                        <td class="tdmand" id="foto5"></td>
+                        <td class="tdmand" id="naam5"></td>
+                        <td class="tdmand" id="stuks5"></td>
+                        <td class="tdmand" id="personen5"></td>
+                        <td class="tdmand" id="prijsstuks5"></td>
+                    </tr>
+                    <tr>
+                        <td> Totaal prijs</td>
+                    </tr>
+                    <tr>
+                        <td id="totaal"></td>
+                    </tr>
+                </table>
+                <div id="korting">korting korting korting</div>
+                <button onclick="totaal()"> Bereken Totaal</button>
+            </div>
+
+
+            <div class="grid-container">
+                <div class="grid-item"> <img src="media/cake1.png" alt="cake">
+                    <p>Gebak 1 persoon</p>
+                    <p class="naam">Tompouce Gele Room</p>
+                    <script src="https://kit.fontawesome.com/d02b5e525a.js" crossorigin="anonymous"></script>
+                    <h3><i class="fa-solid fa-euro-sign"></i>2.65</h3>
+                    <button type="button" onclick="Product('tompouceGele')">In winkelmand</button>
+
+                </div>
+
+                <div class="grid-item"> <img src="media/cake2.png" alt="cake">
+                    <p>Taarten 9 personen</p>
+                    <p class="naam">Kinder marsepein-slagroomtaart</p>
+                    <script src="https://kit.fontawesome.com/d02b5e525a.js" crossorigin="anonymous"></script>
+                    <h3><i class="fa-solid fa-euro-sign"></i>23.75</h3>
+                    <button type="button" onclick="Product('slagroomtaart')">In winkelmand</button>
+                </div>
+
+                <div class="grid-item"> <img src="media/cake3.png" alt="cake">
+                    <p>Gebak 1 persoon</p>
+                    <p class="naam">Tompouce slagroom</p>
+                    <script src="https://kit.fontawesome.com/d02b5e525a.js" crossorigin="anonymous"></script>
+                    <h3><i class="fa-solid fa-euro-sign"></i>2.65</h3>
+                    <button type="button" onclick="Product('tompouceSlagroom')">In winkelmand</button>
+                </div>
+
+                <div class="grid-item"> <img src="media/cake4.png" alt="cake">
+                    <p>Gebak 1 persoon</p>
+                    <p class="naam">Marsepein aardbei cakegebak</p>
+                    <script src="https://kit.fontawesome.com/d02b5e525a.js" crossorigin="anonymous"></script>
+                    <h3><i class="fa-solid fa-euro-sign"></i>2.65</h3>
+                    <button type="button" onclick="Product('MarsepeinAardbeiCakegebak')">In winkelmand</button>
+                </div>
+
+                <div class="grid-item"> <img src="media/cake5.png" alt="cake">
+                    <p>Gebak 1 persoon</p>
+                    <p class="naam">Nougat zandgebakje</p>
+                    <script src="https://kit.fontawesome.com/d02b5e525a.js" crossorigin="anonymous"></script>
+                    <h3><i class="fa-solid fa-euro-sign"></i>2.65</h3>
+                    <button type="button" onclick="Product('NougatZandgebakje')">In winkelmand</button>
+                </div>
+
+                <div class="grid-item"> <img src="media/cake6.png" alt="cake">
+                    <p>Gebak 1 persoon</p>
+                    <p class="naam">Cardinale gebak</p>
+                    <script src="https://kit.fontawesome.com/d02b5e525a.js" crossorigin="anonymous"></script>
+                    <h3><i class="fa-solid fa-euro-sign"></i>2.65</h3>
+                    <button type="button" onclick="Product('CardinaleGebak')">In winkelmand</button>
+                </div>
+
+                <div class="grid-item"> <img src="media/cake7.png" alt="cake">
+                    <p>Gebak 1 persoon</p>
+                    <p class="naam">Marsepein advocaat cakegebak</p>
+                    <script src="https://kit.fontawesome.com/d02b5e525a.js" crossorigin="anonymous"></script>
+                    <h3><i class="fa-solid fa-euro-sign"></i>2.65</h3>
+                    <button type="button" onclick="Product('MarsepeinAdvocaatCakegebak')">In winkelmand</button>
+                </div>
+
+                <div class="grid-item"> <img src="media/cake8.png" alt="cake">
+                    <p>Gebak 1 persoon</p>
+                    <p class="naam">Slagroompunt</p>
+                    <script src="https://kit.fontawesome.com/d02b5e525a.js" crossorigin="anonymous"></script>
+                    <h3><i class="fa-solid fa-euro-sign"></i>2.80</h3>
+                    <button type="button" onclick="Product('Slagroompunt')">In winkelmand</button>
+                </div>
+
+                <div class="grid-item"> <img src="media/cake9.png" alt="cake">
+                    <p>Taarten 9 personen</p>
+                    <p class="naam">Vruchtentaart</p>
+                    <script src="https://kit.fontawesome.com/d02b5e525a.js" crossorigin="anonymous"></script>
+                    <h3><i class="fa-solid fa-euro-sign"></i>23.75</h3>
+                    <button type="button" onclick="Product('Vruchtentaart')">In winkelmand</button>
+                </div>
+
+                <div class="grid-item"> <img src="media/cake10.png" alt="cake">
+                    <p>Gebak 1 persoon</p>
+                    <p class="naam">Chocolade punt</p>
+                    <script src="https://kit.fontawesome.com/d02b5e525a.js" crossorigin="anonymous"></script>
+                    <h3><i class="fa-solid fa-euro-sign"></i>2.80</h3>
+                    <button type="button" onclick="Product('Chocoladepunt')">In winkelmand</button>
+                </div>
+
+                <div class="grid-item"> <img src="media/cake11.png" alt="cake">
+                    <p>Gebak 1 persoon</p>
+                    <p class="naam">Bananensoes</p>
+                    <script src="https://kit.fontawesome.com/d02b5e525a.js" crossorigin="anonymous"></script>
+                    <h3><i class="fa-solid fa-euro-sign"></i>2.65</h3>
+                    <button type="button" onclick="Product('Bananensoes')">In winkelmand</button>
+                </div>
+
+                <div class="grid-item"> <img src="media/cake12.png" alt="cake">
+                    <p>Taarten 9 personen</p>
+                    <p class="naam">Chipolatataart</p>
+                    <script src="https://kit.fontawesome.com/d02b5e525a.js" crossorigin="anonymous"></script>
+                    <h3><i class="fa-solid fa-euro-sign"></i>23.75</h3>
+                    <button type="button" onclick="Product('Chipolatataart')">In winkelmand</button>
+                </div>
+
+            </div>
+        </div>
+
+
+        <footer>
+
+            <div><a href="index.html"><img class="footerlogo" src="media/logo.png" alt="logo"></a></div>
+            <ul>
+                <li>
+                    <h2>Locaties</h2>
+                </li>
+                <li><i class="fa-solid fa-location-dot"></i>
+                    <a href="https://www.google.com/maps/place/Van+Beek+Banquet/@51.8734999,4.4878919,20z/data=!4m15!1m8!3m7!1s0x47c43393252a958b:0x4090eafeefdd20c8!2zMzA4NSBFUyDYsdmI2KrYsdiv2KfZhQ!3b1!8m2!3d51.8735293!4d4.4854742!16s%2Fg%2F1tq4q7x7!3m5!1s0x47c433934134377d:0x4c079abb4a61dc6e!8m2!3d51.8736038!4d4.4880848!16s%2Fg%2F1vpfhqhf"
+                        target="_blank"> Slinge 413</a>
+                </li>
+                <li> <i class="fa-solid fa-location-dot"></i><a
+                        href="https://www.google.com/maps/place/Banketbakkerij+van+Beek+%26+Specker/@51.9235194,4.4850217,21z/data=!3m1!5s0x47c4335a24c638db:0x1decd731d2b1a6e2!4m15!1m8!3m7!1s0x47c4335a2e9d6f07:0x85b2c12b0b7af708!2zMzAxMSBKQyDYsdmI2KrYsdiv2KfZhQ!3b1!8m2!3d51.9234493!4d4.4850105!16s%2Fg%2F1v2kwlzw!3m5!1s0x47c4335a2eda648f:0x7aef4cb78fb5764d!8m2!3d51.923531!4d4.4850346!16s%2Fg%2F1tgqhlg0"
+                        target="_blank"> Meent 35</a></li>
+                <li><i class="fa-solid fa-location-dot"></i><a
+                        href="https://www.google.nl/maps/place/Karel+Doormanstraat+340,+3012+GR+Rotterdam/@51.91935,4.4761155,17z/data=!3m1!4b1!4m6!3m5!1s0x47c434a097d60613:0x32b9a911eca7c29e!8m2!3d51.91935!4d4.4761155!16s%2Fg%2F11bytnv8yc"
+                        target="_blank"> Karel Doormanstraat 340</a></li>
+            </ul>
+            <ul>
+                <li>
+                    <h2>Contact</h2>
+                </li>
+                <li>
+                    <p><i class="fa-solid fa-envelope"></i> info@vanbeekbanket.nl </p>
+                </li>
+                <li>
+                    <p><i class="fa-solid fa-phone"></i> 010-4807069</p>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <h2>Sociaal Media</h2>
+                </li>
+                <li><i class="fa-brands fa-facebook"></i> <a
+                        href="https://da-dk.facebook.com/people/Banketbakkerij-van-Beek-en-Specker/100054608672219/"
+                        target="_blank"> Facebook</a></li>
+                    </ul>
+            <br><button class="footerbutton"><a class="linktekst" href="bestel.html" target="_blank"> Bestel hier </a></button>
+
+        </footer>
+    </div>
+
+    <script src="bestel.js"> </script>
+</body>
+
+</html>
