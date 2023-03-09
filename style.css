@@ -17,8 +17,8 @@ header {
 
 .logo {
     height: 4vw;
-    width: 16vw;
-    margin: 3vh 2vw;
+    width: 17vw;
+    margin: 2vh 3vw;
     display: inline-block;
 }
 
@@ -28,20 +28,20 @@ header {
     overflow: hidden;
     float: right;
     display: inline-flex;
-    margin: 0 3vw;
+ 
 }
 
-
 .navtekst {
-    margin: 5vh 1vw;
+    margin: 4vh 1vw;
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 12px 20px;
     color: #3a3a3a;
     text-decoration: none;
     font-size: 20px;
     font-weight: bold;
+    
 }
 
 .navtekst:hover {
@@ -53,7 +53,7 @@ header {
 }
 
 footer {
-    height: 90vh;
+    height: 60vh;
     width: 100%;
     background-image: url("media/footer.png");
     background-size: cover;
@@ -63,10 +63,13 @@ footer {
 }
 
 .footerlogo {
-    margin-top: 10vw;
+    margin-top: 6vw;
     margin-bottom: 2vw;
-    margin-left: 50%;
+    margin-left: 37%;
     width: 25vw;
+}
+.footer-div{
+    margin: 10vw 10vw;
 }
 
 a:link {
@@ -76,19 +79,56 @@ a:link {
 ul {
     list-style: none;
     display: inline-block;
-    margin-left: 14vw;
+    margin-left: 18vw;
 }
 
 .footerbutton {
     margin: 2vw 45%;
+    background-color: #98654a;
+    color: white;
+    border-radius: 25px;
+    padding: 2vh 2vw;
+    font-size: 17px;
 }
+
 .linktekst{
     color: aliceblue;
 }
+
+
+
+.bannerbtn {
+    color: white;
+    padding: 10px 36px;
+    background-color: #98654a;
+    border-radius: 30px;
+    transition: 0.3s ease-in;
+}
+
+button:hover{
+    background-color: #714a35;
+}
+
+button:active{
+    background-color: #98654a;
+}
+
+/* img{
+    transition: 0.4s ease-in;
+}
+
 img:hover {
     transform: scale(1.5);
-}
+} */
 
 .heading{
     height: 1100px;
+}
+
+
+.ctabtn{
+    margin-top: 50px;
+    height: 150px;
+    width: 300px;
+    border-radius: 10px;
 }

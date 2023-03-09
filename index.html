@@ -4,13 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,500;0,600;0,800;1,500&display=swap"
+        rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/d02b5e525a.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="style.css" />
     <title>Home</title>
 </head>
 <body>
     <header>
-        <a href="index.html"><img class="logo" src="/media/logo.png" alt="logo"></a>
+        <a href="index.html"><img class="logo" src="media/logo.png" alt="logo"></a>
         <ul class="navbar">
             <li><a href="index.html" class="navtekst" id="home">Home</a></li>
             <li><a href="menu.html" class="navtekst">Menu</a></li>
@@ -22,38 +27,73 @@
 
 
     <div class="heading w-screen">
-       <div class="banner bg-orange-400 h-1/2 w-screen">
-        <h1 class="font-bold text-7xl">Verse Producten</h1>
-        <h2>Heerlijk</h2>
-            <button></button>
+       <div class="banner w-screen flex flex-col items-center">
+        <h1 class="font-bold text-6xl pt-32">Verse Producten</h1>
+        <h2 class="text-red-600 text-4xl pt-3 pb-12">Heerlijk</h2>
+            <button class="bannerbtn text-2xl">Bestel Nu</button>
+       </div>
+       <div class="cta">
+            <div class="ctabtn bg-orange-200">
+
+            </div>
+            <div class="ctabtn bg-orange-200">
+
+            </div>
        </div>
     </div>
 
 
 
-    <div>
-        <div class="p-8 bg-amber-300">
+    <div class="sec-2">
+        <div id="grid" class="p-8 300">
+            <div class="p-8 bg-amber-300">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-8">
-              <div class="p-4 bg-cyan-400 rounded-md flex items-center justify-center">1</div>
-              <div class="p-4 bg-cyan-400 rounded-md flex items-center justify-center">2</div>
-              <div class="p-4 bg-cyan-400 rounded-md flex items-center justify-center">3</div>
-              <div class="p-4 bg-cyan-400 rounded-md flex items-center justify-center">4</div>
-              <div class="p-4 bg-cyan-400 rounded-md flex items-center justify-center">5</div>
-              <div class="p-4 bg-cyan-400 rounded-md flex items-center justify-center">6</div>
-              <div class="p-4 bg-cyan-400 rounded-md flex items-center justify-center">7</div>
-              <div class="p-4 bg-cyan-400 rounded-md flex items-center justify-center">8</div>
+             
+            <div class="p-4 bg-cyan-400 rounded-md flex items-center justify-center">
+
+              </div>
+              
+              <div class="p-4 bg-cyan-400 rounded-md flex items-center justify-center">
+                
+            </div>
+
+              <div class="p-4 bg-cyan-400 rounded-md flex items-center justify-center">
+                
+            </div>
+
+              <div class="p-4 bg-cyan-400 rounded-md flex items-center justify-center">
+                
+            </div>
+
+              <div class="p-4 bg-cyan-400 rounded-md flex items-center justify-center">
+                
+            </div>
+
+              <div class="p-4 bg-cyan-400 rounded-md flex items-center justify-center">
+                
+            </div>
+
+              <div class="p-4 bg-cyan-400 rounded-md flex items-center justify-center">
+                
+            </div>
+
+              <div class="p-4 bg-cyan-400 rounded-md flex items-center justify-center">
+                
+            </div>
+
+
             </div>
           </div>
     </div>
 
 
-
+<div class="footer-div"></div>
     <footer>
 
-        <div><a href="index.html"><img class="footerlogo" src="/media/logo.png" alt="logo"></a></div>
+        <div><a href="index.html"><img class="footerlogo" src="media/logo.png" alt="logo"></a></div>
+    
         <ul>
-            <li>
-                <h2>Locaties</h2> </li>
+            <li class="font-semibold"> <h2>Locaties</h2> </li>
             <li><i class="fa-solid fa-location-dot"></i>
                 <a href="https://www.google.com/maps/place/Van+Beek+Banquet/@51.8734999,4.4878919,20z/data=!4m15!1m8!3m7!1s0x47c43393252a958b:0x4090eafeefdd20c8!2zMzA4NSBFUyDYsdmI2KrYsdiv2KfZhQ!3b1!8m2!3d51.8735293!4d4.4854742!16s%2Fg%2F1tq4q7x7!3m5!1s0x47c433934134377d:0x4c079abb4a61dc6e!8m2!3d51.8736038!4d4.4880848!16s%2Fg%2F1vpfhqhf"
                     target="_blank"> Slinge 413</a></li>
@@ -68,14 +108,14 @@
        
 
         <ul>
-            <li><h2>Contact</h2></li>
+            <li class="font-semibold"><h2>Contact</h2></li>
             <li><p><i class="fa-solid fa-envelope"></i> info@vanbeekbanket.nl </p>
             </li>
             <li><p><i class="fa-solid fa-phone"></i> 010-4807069</p></li>
         </ul>
 
         <ul>
-            <li><h2>Social Media</h2></li>
+            <li class="font-semibold"><h2>Social Media</h2></li>
             <li><i class="fa-brands fa-facebook"></i> <a
                     href="https://da-dk.facebook.com/people/Banketbakkerij-van-Beek-en-Specker/100054608672219/"
                     target="_blank"> Facebook</a></li>
