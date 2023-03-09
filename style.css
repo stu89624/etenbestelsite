@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+header {
+    background-color: white;
+    overflow: hidden;
+    
+}
+
+.logo {
+    height: 4vw;
+    width: 16vw;
+    margin: 3vh 2vw;
+    display: inline-block;
+}
+
+.navbar {
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    float: right;
+    display: inline-flex;
+    margin: 0 3vw;
+}
+
+
+.navtekst {
+    margin: 5vh 1vw;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    color: #3a3a3a;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.navtekst:hover {
+    color: rgb(230, 124, 112);
+}
+
+#home {
+    color: #98654a;
+}
+
+footer {
+    height: 90vh;
+    width: 100%;
+    background-image: url("media/footer.png");
+    background-size: cover;
+    list-style-type: none;
+    color: #3a3a3a;
+    margin-top: 5vw;
+}
+
+.footerlogo {
+    margin-top: 10vw;
+    margin-bottom: 2vw;
+    margin-left: 50%;
+    width: 25vw;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    display: inline-block;
+    margin-left: 14vw;
+}
+
+.footerbutton {
+    margin: 2vw 45%;
+}
+.linktekst{
+    color: aliceblue;
+}
+img:hover {
+    transform: scale(1.5);
+}
+
+.heading{
+    height: 1100px;
+}
