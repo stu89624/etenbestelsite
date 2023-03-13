@@ -52,6 +52,7 @@ header {
     color: #98654a;
 }
 
+
 footer {
     height: 60vh;
     width: 100%;
@@ -59,7 +60,7 @@ footer {
     background-size: cover;
     list-style-type: none;
     color: #3a3a3a;
-    margin-top: 5vw;
+    margin-top: 7vw;
 }
 
 .footerlogo {
@@ -68,18 +69,19 @@ footer {
     margin-left: 37%;
     width: 25vw;
 }
-.footer-div{
-    margin: 10vw 10vw;
-}
 
 a:link {
     text-decoration: none;
 }
 
-ul {
+.list {
     list-style: none;
-    display: inline-block;
-    margin-left: 18vw;
+    margin-left: 17vw;
+    margin-top: 1vw;
+}
+
+.footerList {
+    display: flex;
 }
 
 
