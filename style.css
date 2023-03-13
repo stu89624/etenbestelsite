@@ -113,6 +113,36 @@ button:active{
     background-color: #98654a;
 }
 
+
+.grid-item {
+    background-color: rgba(237, 231, 225, 255);
+    padding: 3vw 1vw;
+    font-size: 12px;
+    margin: 1vw 1vw;
+    text-align: center;
+    border-radius: 25px;
+    box-shadow: 10px 10px 5px 6px rgb(190, 198, 201, 0.1);
+}
+
+#bestsellers{
+    font-size: 35px;
+    font-weight: 700;
+    color: #3a3a3a;
+}
+.footerbutton {
+    background-color: #98654a;
+    color: white;
+    border-radius: 25px;
+    padding:1vw 1vw;
+    font-size: 18px;
+    border: none;
+    width: 12vw;
+    height: 8vh;
+}
+Img:hover {
+    transition: 0.2s ease-out;
+}
+
 /* img{
     transition: 0.4s ease-in;
 }
