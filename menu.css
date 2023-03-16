@@ -90,7 +90,7 @@ a:link {
 
 
 .main {
-    background-image: url("media/menu.png");
+    background-image: url("menu.png");
     background-size: cover;
     display: inline-flex;
     height: 300vh;
