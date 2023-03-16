@@ -89,7 +89,10 @@ a:link {
     color: aliceblue;
 }
 
-
+.banner{
+    background-image: url("media/banner.png");
+    height: 40%;
+}
 
 .bannerbtn {
     color: white;
@@ -107,15 +110,18 @@ button:active{
     background-color: #98654a;
 }
 
+/*////////////////////*/
+.sec-2{
+    background-image: url("media/div.png");
+}
 
 .grid-item {
     background-color: rgba(237, 231, 225, 255);
-    padding: 3vw 1vw;
-    font-size: 12px;
-    margin: 1vw 1vw;
+    padding: 3vw 3vw;
+    font-size: 15px;
     text-align: center;
     border-radius: 25px;
-    box-shadow: 10px 10px 5px 6px rgb(190, 198, 201, 0.1);
+    box-shadow: 10px 10px 5px 6px rgba(216, 233, 240, 0.1);
 }
 
 #bestsellers{
@@ -123,6 +129,7 @@ button:active{
     font-weight: 700;
     color: #3a3a3a;
 }
+
 .footerbutton {
     background-color: #98654a;
     color: white;
@@ -132,18 +139,26 @@ button:active{
     border: none;
     width: 12vw;
     height: 8vh;
+    margin: auto 43%;
 }
+
+.BestIMG{
+    width: 8vw;
+    height: 17vh;
+}
+
+
 Img:hover {
     transition: 0.2s ease-out;
 }
 
-/* img{
+ img{
     transition: 0.4s ease-in;
 }
 
 img:hover {
     transform: scale(1.5);
-} */
+} 
 
 .heading{
     height: 1100px;
@@ -155,4 +170,5 @@ img:hover {
     height: 150px;
     width: 300px;
     border-radius: 10px;
+    background-color: #EDE9E4;
 }

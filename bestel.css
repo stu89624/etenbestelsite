@@ -2,7 +2,7 @@ body {
     height: 100vh;
     padding: 0;
     margin: 0;
-    font-family: "Nunito", Sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
     background-image: url("media/div.png");
     background-size: cover;
 }
@@ -29,11 +29,11 @@ header {
 
 
 .navtekst {
-    margin: 5vh 1vw;
+    margin: 4vh 1vw;
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 12px 20px;
     color: #3a3a3a;
     text-decoration: none;
     font-size: 20px;
@@ -44,7 +44,7 @@ header {
     color: rgb(230, 124, 112);
 }
 
-#home {
+#active {
     color: #98654a;
 }
 
