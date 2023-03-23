@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
 
+
 *{
     margin: 0;
     padding: 0;
@@ -97,6 +98,7 @@ a:link {
 .bannerbtn {
     color: white;
     padding: 10px 36px;
+    margin-bottom: 90px;
     background-color: #98654a;
     border-radius: 30px;
     transition: 0.3s ease-in;
@@ -121,7 +123,6 @@ button:active{
     font-size: 15px;
     text-align: center;
     border-radius: 25px;
-    box-shadow: 10px 10px 5px 6px rgba(216, 233, 240, 0.1);
 }
 
 #bestsellers{
@@ -131,15 +132,17 @@ button:active{
 }
 
 .footerbutton {
-    background-color: #98654a;
     color: white;
-    border-radius: 25px;
-    padding:1vw 1vw;
-    font-size: 18px;
-    border: none;
-    width: 12vw;
-    height: 8vh;
-    margin: auto 43%;
+    padding: 10px 36px;
+    margin-bottom: 90px;
+    background-color: #98654a;
+    border-radius: 20px;
+    transition: 0.3s ease-in;
+    margin: auto 44%;
+    width: 250px;
+    height: 80px;
+    font-size: 30px;
+    
 }
 
 .BestIMG{
@@ -148,27 +151,50 @@ button:active{
 }
 
 
-Img:hover {
-    transition: 0.2s ease-out;
-}
-
  img{
     transition: 0.4s ease-in;
 }
 
 img:hover {
-    transform: scale(1.5);
+    transform: scale(1.1);
 } 
 
 .heading{
-    height: 1100px;
+    height: 100%;
 }
 
+.cta {
+    display: flex;
+    gap: 5em;
+    justify-content: center;
 
+}
 .ctabtn{
     margin-top: 50px;
-    height: 150px;
-    width: 300px;
+    height: 250px;
+    width: 500px;
     border-radius: 10px;
     background-color: #EDE9E4;
+    text-align: center;
+    transition: 0.2s ease-in;
+}
+
+.ctabtn h1 {
+ margin-top: 70px;
+ font-weight: bold;
+ font-size: 40px;
+}
+
+.ctabtn a {
+    margin-top: 10px;
+    font-size: 30px;
+   }
+
+.ctabtn i {
+    font-size: 25px;
+}
+
+.btn1:hover{
+    transform: scale(1.02);
+    border: 1px solid #dcd8d3;;
 }
