@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Afrekenen</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,500;0,600;0,800;1,500&display=swap"rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="media/favicon.png">
+    <script src="https://kit.fontawesome.com/d02b5e525a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <form action="post">
+        <h1> Afrekenen </h1> 
+        <label for="fname">Naam:</label><br>
+        <input type="text" placeholder=" uw naam " ><br>
+        
+        <label for="lname">Adress:</label><br>
+        <input type="text" placeholder=" uw adress "><br><br>
+
+        <label for="lname">Postcode:</label><br>
+        <input type="text" pattern="^(?(^00000(|-0000))|(\d{5}(|-\d{4})))$" placeholder=" uw postcode "><br><br>
+
+        <label for="lname">telefoon nummer:</label><br>
+        <input type="text" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder=" uw telefoon nummer "><br><br>
+       
+      </form>
+
+      <div id="smart-button-container">
+        <div style="text-align: center;">
+          <div id="paypal-button-container"></div>
+        </div>
+      </div>
+    <script src="https://www.paypal.com/sdk/js?client-id=sb&enable-funding=venmo&currency=EUR" data-sdk-integration-source="button-factory"></script>
+    <script>
+      function initPayPalButton() {
+        paypal.Buttons({
+          style: {
+            shape: 'rect',
+            color: 'gold',
+            layout: 'vertical',
+            label: 'checkout',
+            
+          },
+  
+          createOrder: function(data, actions) {
+            return actions.order.create({
+              purchase_units: [{"amount":{"currency_code":"EUR","value":1}}]
+            });
+          },
+  
+          onApprove: function(data, actions) {
+            return actions.order.capture().then(function(orderData) {
+           
+              console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
+  
+              const element = document.getElementById('paypal-button-container');
+              element.innerHTML = '';
+              element.innerHTML = '<h3>Thank you for your payment!</h3>';
+  
+              
+            });
+          },
+  
+          onError: function(err) {
+            console.log(err);
+          }
+        }).render('#paypal-button-container');
+      }
+      initPayPalButton();
+    </script>
+
+    <style>
+
+    body{
+      background-image: url("media/banner.png");
+    }
+
+    </style>
+
+<script src="bestel.js"></script>
+</body>
+</html>
