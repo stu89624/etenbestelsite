@@ -173,3 +173,6 @@ button:active{
 .begintekstgroot {
     font-size: 45px;
 }
+a:link {
+    color: #3a3a3a;
+  }
