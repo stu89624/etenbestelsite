@@ -17,7 +17,7 @@ document.getElementById("tek").innerHTML="<h2>Indah</h2>Wat hebben ze gedaan:<ul
 let t1=document.getElementById("tek");
 
     if(f2.onclick)
-document.getElementById("tek").innerHTML="<h2>Mariam</h2>Wat hebben ze gedaan:<ul><li>navbar+footer</li><li>Bestsellers(index)</li><li>info(index)</li><li>menu pagina</li><li>Opmaak van bestelpagina</li><li>afrekenen pagina</li><li>Project plan</li><li>Scrum board(Jira)</li></ul>";
+document.getElementById("tek").innerHTML="<h2>Mariam</h2>Wat hebben ze gedaan:<ul><li>Navbar+footer</li><li>Bestsellers(index)</li><li>Info(index)</li><li>Menu pagina</li><li>Opmaak van bestelpagina</li><li>Afrekenen pagina</li><li>Project plan</li><li>Scrum board(Jira)</li></ul>";
   }
 
 
