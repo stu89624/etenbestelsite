@@ -41,5 +41,5 @@ function myFunction4() {
 let t1=document.getElementById("tek");
 
     if(f4.onclick)
-document.getElementById("tek").innerHTML="<h2>Jayden</h2>Wat hebben ze gedaan:<ul><li>banner indexpagina </li><li> menu+info knopjes bij index</li><li>...</li><li>...</li></ul> ";
+document.getElementById("tek").innerHTML="<h2>Jayden</h2>Wat hebben ze gedaan:<ul><li>banner indexpagina </li><li>...</li><li>...</li></ul> ";
   }
