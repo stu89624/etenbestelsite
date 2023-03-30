@@ -198,3 +198,94 @@ img:hover {
     transform: scale(1.02);
     border: 1px solid #dcd8d3;;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#kort {
+    text-align: center;
+}
+
+#rest {
+    float: left;
+    background-color: #EDE9E4;
+    width: 43%;
+    height: 41vw;
+    margin-left: 10px;
+    box-shadow: 0px 20px 50px rgba(202, 202, 203, 0.5);
+    border-radius: 10px;
+    margin-left: 5vw;
+
+}
+
+#tek1 {
+    text-align: center;
+    font-size: 25px;
+    margin-top: 15px;
+}
+
+#coro {
+    float: right;
+    background-color: #EDE9E4;
+    width: 43%;
+    height: 30vw;
+    margin-right: 10px;
+    box-shadow: 0px 20px 50px rgb(204, 204, 205);
+    border-radius: 10px;
+    margin-right: 5vw;
+
+}
+
+#tek2 {
+    text-align: center;
+    font-size: 25px;
+    margin-top: 15px;
+}
+
+.para1 {
+    margin-top: 2%;
+    margin-left: 9%;
+    width: 80%;
+
+}
+
+.h22 {
+    margin-top: 2%;
+    margin-left: 9%;
+    width: 80%;
+
+
+}
+
+#ull {
+    margin-top: 2%;
+    margin-left: 9%;
+}
+
+#restaurant {
+    width: 20vw;
+    margin-left: 25%;
+    margin-top: 1vw;
+    border-radius: 10px;
+}
+
+.infoindex {
+    margin-bottom: 50vw;
+    margin-top: 5vw;
+}
+
+#rest:hover , #coro:hover {
+    transform: scale(1.02);
+    border: 1px solid #dcd8d3;
+}
