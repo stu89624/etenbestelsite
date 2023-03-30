@@ -5,7 +5,7 @@ function myFunction() {
 let t1=document.getElementById("tek");
 
     if(f1.onclick)
-document.getElementById("tek").innerHTML="<h2>Indah</h2>Wat hebben ze gedaan:<ul><li>Info (index)</li><li>Informatie pagina</li><li>Scrum board(Jira)</li></ul> ";
+document.getElementById("tek").innerHTML="<h2>Indah</h2>Wat hebben ze gedaan:<ul><li>Korte info (index)</li><li>Informatie pagina</li><li>Scrum board(Jira)</li></ul> ";
   }
 
 
