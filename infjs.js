@@ -5,7 +5,7 @@ function myFunction() {
 let t1=document.getElementById("tek");
 
     if(f1.onclick)
-document.getElementById("tek").innerHTML="<h2>Naam1</h2>Wat hebben ze gedaan:<ul><li>...</li><li>...</li><li>...</li><li>...</li></ul> ";
+document.getElementById("tek").innerHTML="<h2>Indah</h2>Wat hebben ze gedaan:<ul><li>...</li><li>...</li><li>...</li><li>...</li></ul> ";
   }
 
 
@@ -17,7 +17,7 @@ document.getElementById("tek").innerHTML="<h2>Naam1</h2>Wat hebben ze gedaan:<ul
 let t1=document.getElementById("tek");
 
     if(f2.onclick)
-document.getElementById("tek").innerHTML="<h2>Naam2</h2>Wat hebben ze gedaan:<ul><li>...</li><li>...</li><li>...</li><li>...</li></ul>";
+document.getElementById("tek").innerHTML="<h2>Mariam</h2>Wat hebben ze gedaan:<ul><li>navbar+footer</li><li>Bestsellers(index)</li><li>menu pagina</li><li>Opmaak van bestelpagina</li><li>afrekenen pagina</li></ul>";
   }
 
 
@@ -29,7 +29,7 @@ document.getElementById("tek").innerHTML="<h2>Naam2</h2>Wat hebben ze gedaan:<ul
 let t1=document.getElementById("tek");
 
     if(f3.onclick)
-document.getElementById("tek").innerHTML="<h2>Naam3</h2>Wat hebben ze gedaan:<ul><li>...</li><li>...</li><li>...</li><li>...</li></ul>";
+document.getElementById("tek").innerHTML="<h2>Jesse</h2>Wat hebben ze gedaan:<ul><li>Bestelpagina JavaScript</li><li>...</li><li>...</li><li>...</li></ul>";
   }
 
 
@@ -41,5 +41,5 @@ function myFunction4() {
 let t1=document.getElementById("tek");
 
     if(f4.onclick)
-document.getElementById("tek").innerHTML="<h2>Naam4</h2>Wat hebben ze gedaan:<ul><li>...</li><li>...</li><li>...</li><li>...</li></ul> ";
+document.getElementById("tek").innerHTML="<h2>Jayden</h2>Wat hebben ze gedaan:<ul><li>banner indexpagina </li><li> menu+info knopjes bij index</li><li>...</li><li>...</li></ul> ";
   }
